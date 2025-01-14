@@ -1,3 +1,3 @@
 #!/bin/bash
-docker pull $DOCKER_USERNAME/restapi-project:$CODEBUILD_RESOLVED_SOURCE_VERSION
-docker run -d -p 80:80 $DOCKER_USERNAME/restapi-project:$CODEBUILD_RESOLVED_SOURCE_VERSION
+docker pull raghav045/restapi-project
+docker run -d -p 80:9002 raghav045/restapi-project

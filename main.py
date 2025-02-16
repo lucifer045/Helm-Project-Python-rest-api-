@@ -8,6 +8,9 @@ def helloworld():
 	if(request.method == 'GET'):
 		data = {"data": "Hello World"}
 		return jsonify(data)
+@app.route('/health')
+def health_check():
+       return 'OK', 200
 
 
 if __name__ == '__main__':
